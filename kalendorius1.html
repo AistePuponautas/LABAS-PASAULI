@@ -8,9 +8,10 @@ body {font-family:Verdana, Geneva, Tahoma, sans-serif}
 
 .month {
   padding: 40px 10px;
-  width: 40%;
+  width: 30%;
   background: green;
   text-align: center;
+ 
 }
 
 .month ul {
@@ -23,35 +24,36 @@ body {font-family:Verdana, Geneva, Tahoma, sans-serif}
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  
 }
 
 .month .prev {
   float: left;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .month .next {
   float: right;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .weekdays {
   margin: 0;
-  width: 40%;
+  width: 30%;
   padding: 10px 0;
-  background-color: #ddd;
+  background-color: green;
 }
 
 .weekdays li {
   display: inline-block;
-  width: 12.5%;
-  color: #666;
+  width: 12%;
+  color: white;
   text-align: center;
 }
 
 .days {
   padding: 10px 0;
-  width: 40%;
+  width: 30%;
   background: #eee;
   margin: 0;
 }
@@ -59,7 +61,7 @@ body {font-family:Verdana, Geneva, Tahoma, sans-serif}
 .days li {
   list-style-type: none;
   display: inline-block;
-  width: 12.5%;
+  width: 12%;
   text-align: center;
   margin-bottom: 5px;
   font-size:12px;
@@ -70,6 +72,16 @@ body {font-family:Verdana, Geneva, Tahoma, sans-serif}
   padding: 5px;
   background: #1abc9c;
   color: white !important
+}
+.days li .activered {
+    padding: 5px;
+    background: rgb(250, 185, 185);
+    color: red ;
+}
+.days li .activeweekends {
+    padding: 5px;
+    background:#eee ;
+    color:red ;
 }
 
 /* Add media queries for smaller screens */
@@ -112,38 +124,227 @@ body {font-family:Verdana, Geneva, Tahoma, sans-serif}
 </ul>
 
 <ul class="days">  
-  <li>1</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li><span class="activered">1</span></li>
   <li>2</li>
   <li>3</li>
   <li>4</li>
   <li>5</li>
   <li>6</li>
   <li>7</li>
-  <li>8</li>
+  <li><span class="activeweekends">8</span></li>
   <li>9</li>
   <li>10</li>
   <li>11</li>
   <li>12</li>
   <li><span class="active">13</span></li>
   <li>14</li>
-  <li>15</li>
+  <li><span class="activeweekends">15</span></li>
   <li>16</li>
   <li>17</li>
   <li>18</li>
   <li>19</li>
   <li>20</li>
   <li>21</li>
-  <li>22</li>
+  <li><span class="activeweekends">22</span></li>
   <li>23</li>
   <li>24</li>
   <li>25</li>
   <li>26</li>
   <li>27</li>
   <li>28</li>
-  <li>29</li>
+  <li><span class="activeweekends">29</span></li>
   <li>30</li>
   <li>31</li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<p>01-01 Naujieji metai</p>
+
+</body>
+</html>
+
+  
+
+
+
+
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family:Verdana, Geneva, Tahoma, sans-serif}
+
+.month {
+  padding: 40px 10px;
+  width: 30%;
+  background: green;
+  text-align: center;
+ 
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  
+}
+
+.month .prev {
+  float: left;
+  padding-top: 5px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 5px;
+}
+
+.weekdays {
+  margin: 0;
+  width: 30%;
+  padding: 10px 0;
+  background-color: green;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12%;
+  color: white;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  width: 30%;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+.days li .activered {
+    padding: 5px;
+    background: rgb(250, 185, 185);
+    color: red ;
+}
+.days li .activeweekends {
+    padding: 5px;
+    background:#eee ;
+    color:red ;
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+
+<div class="month">      
+  <ul>
+  
+ 
+    <li>
+      Balandis<br>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Pr</li>
+  <li>An</li>
+  <li>Tr</li>
+  <li>Ke</li>
+  <li>Pe</li>
+  <li>Še</li>
+  <li>Se</li>
 </ul>
 
+<ul class="days">  
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li>1</li>
+  <li><span class="activeweekends">2</span></li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li><span class="activered">9</span></li>
+  <li><span class="activered">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li><span class="activeweekends">16</span></li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li><span class="activeweekends">23</span></li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li><span class="activeweekends">30</span></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+<p>04-10 Velykos</p>
+<p>04-10 Velykų antroji diena</p>
 </body>
 </html>
