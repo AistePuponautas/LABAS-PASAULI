@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formos</title>
+  <style>
+    div {
+  padding: 10px;
+  border-bottom: 1px solid #4CAF50;
+  width: 300px
+  
+}
+    body {
+      text-align: left; 
+    }
+    strong {
+      font-weight:bolder;
+    }
+      form {
+        width: 400px;
+        margin: auto;
+      }
+      label {
+        display: inline;
+      }
+
+input[type="text"],
+        input[type="name"],
+        input[type="email"],
+        input[type="subject"], 
+        input[type="message"],
+        select,
+        textarea {
+            width: 100%;
+            background-color: white;
+            padding: .6rem .10rem;
+        }
+
+        .aligned-items label {
+            display: inline;
+        }
+
+        input[type="range"] {
+            width: 100%;
+        }
+        textarea {
+            resize: none;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="strong">
+            <label>NAME</label>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="strong">
+            <label>EMAIL</label>
+            <input type="email" placeholder="Email" required>
+        </div>
+  <div class="strong" >
+<label>SUBJECT</label>
+  <input type="text" placeholder="Subject">
+</div>
+<div class="strong" >
+  <label>MESSAGE</label>
+    <input type="text" placeholder="Message">
+  </div>
+      <button type="submit">Send message</button>
+  </form>
+</body>
+</html>
