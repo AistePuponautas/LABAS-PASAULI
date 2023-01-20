@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.circle {
+  position: absolute;
+  margin: 0;
+  display: flex;
+  top: 100px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotate(90deg);
+}
+.circle:after, .circle:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 50%;
+}
+.circle:after {
+  background: #C36271;
+  left: 0px;
+}
+.circle:before {
+  background: #F2E09F;
+  right: 0px;
+}
+<div>
+</div>
+</style>
+</head>
+<body>
+  
+<h2>Circle CSS</h2>
+<div class="circle"></div>
+
+</body>
+</html> 
