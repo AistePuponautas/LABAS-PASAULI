@@ -1,42 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class='b'></div>
 <style>
-.circle {
-  position: absolute;
-  margin: 0;
-  display: flex;
-  top: 100px;
-  left: 150px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  transform: rotate(90deg);
-}
-.circle:after, .circle:before {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 50%;
-}
-.circle:after {
-  background: #C36271;
-  left: 0px;
-}
-.circle:before {
-  background: #F2E09F;
-  right: 0px;
-}
-<div>
-</div>
+  body{
+    margin:0;
+  }
+  .b{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(to bottom, #C36271 50.1%, #F2E09F 50%)
+  }
+  .b::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 380;
+    height: 150;
+    background: #F2E09F;
+    border-radius: 0 0 100px 0;
+  }
+  .b::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20;
+    width: 400;
+    height: 150px;
+    background: #C36271;
+    border-radius: 100px 0 0 0;
+    
+  }
+  html::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100;
+    height: 100;
+    background: linear-gradient(to bottom, #C36271 50.1%, #F2E09F 50%);
+    z-index: 1;
+    border-radius: 50%; 
+  }
 </style>
-</head>
-<body>
-  
-<h2>Circle CSS</h2>
-<div class="circle"></div>
-
-</body>
-</html> 
