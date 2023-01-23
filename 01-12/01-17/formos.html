@@ -6,70 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formos</title>
   <style>
-    div {
-  padding: 10px;
-  border-bottom: 1px solid #4CAF50;
-  width: 300px
-  
-}
-    body {
-      text-align: left; 
+    * {
+      box-sizing: border-box;
     }
-    strong {
-      font-weight:bolder;
-    }
-      form {
-        width: 400px;
-        margin: auto;
-      }
-      label {
-        display: inline;
-      }
+  body {
+    background: lightgrey;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif ;
+  }
+  .contact-form {
+    display: flex;
+    width: 1000px;
+    margin: 50px auto 0;
+  }
+  .left-part {
+    width: 30;
+    background: green;
+  }
+  .right-part {
+width: 100px;
+background: white;
+padding: 50px;
+  }
 
-input[type="text"],
-        input[type="name"],
-        input[type="email"],
-        input[type="subject"], 
-        input[type="message"],
-        select,
-        textarea {
-            width: 100%;
-            background-color: white;
-            padding: .6rem .10rem;
-        }
-
-        .aligned-items label {
-            display: inline;
-        }
-
-        input[type="range"] {
-            width: 100%;
-        }
-        textarea {
-            resize: none;
-            height: 300px;
-        }
-    </style>
+  </style>
 </head>
 <body>
-    <form>
-        <div class="strong">
-            <label>NAME</label>
-            <input type="text" placeholder="Name">
+  <div class="contact-form">
+    <div class="left-part">
+      <h2>Lets get in touch</h2>
+      <p>were open for any</p>
+      <div class="contact-details">
+        <div class="option">
+          Adress:
+          <span>1985 West bla bla bla</span> 
         </div>
-        <div class="strong">
-            <label>EMAIL</label>
-            <input type="email" placeholder="Email" required>
+        <div class="option">
+          Phone:
+
         </div>
-  <div class="strong" >
-<label>SUBJECT</label>
-  <input type="text" placeholder="Subject">
-</div>
-<div class="strong" >
-  <label>MESSAGE</label>
-    <input type="text" placeholder="Message">
+      </div>
   </div>
-      <button type="submit">Send message</button>
-  </form>
+  <div class="right-part">
+    <h2>get in touch</h2>
+    <div class="input-row">
+      <label>Full name</label>
+      <input type="text">
+    </div>
+    <div class="input-row">
+      <label>Email</label>
+      <input type="text">
+    </div>
+  </div>
 </body>
 </html>
