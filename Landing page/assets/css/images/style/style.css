@@ -1,16 +1,6 @@
-
-body {
+.section {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #6c757d;
-   
-}
-ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-section {
+    display:flex;
     background-image: url("hero-3-bg.png"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
