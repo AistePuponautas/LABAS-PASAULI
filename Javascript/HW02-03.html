@@ -8,21 +8,68 @@
 </head>
 <body>
     <script>
+        console.log(`Pirma užduotis`);
+        let rand1 = rand(0, 4);
+        console.log(rand1);
+        let rand2 = rand(0, 4);
+        console.log(rand2);
+        let division;
+        if (rand1 > rand2) {
+            division = (rand1 / rand2);
+            console.log(`Padalinus didesnį skaičių iš mažesnio gauname:`, division.toFixed(2));
+        } else {
+            division = (rand2 / rand1);
+            console.log(`Padalinus didesnį skaičių iš mažesnio gauname:`, division.toFixed(2));
+        }
+
         function rand(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min + 1) + min);
         }
-        //1
-        let herbas = rand(0,1);
-        let skaicius = rand(0,1)
 
-        function getRandom() {
-  return Math.random();
-}
- 
-    </script>
+
+//1
+        console.log(`Antra užduotis`);
+        rand1 = rand(0, 25);
+        console.log(rand1);
+        rand2 = rand(0, 25);
+        console.log(rand2);
+        let rand3 = rand(0, 25);
+        console.log(rand3);
+        let max = Math.max(rand1, rand2, rand3);
+        let min = Math.min(rand1, rand2, rand3);
+        if (rand1 < max && rand1 > min) {
+            console.log(`Vidurinis skaičius:`, rand1);
+        } else if (rand2 < max && rand2 > min) {
+            console.log(`Vidurinis skaičius:`, rand2);
+        } else if (rand3 < max && rand3 > min) {
+            console.log(`Vidurinis skaičius:`, rand3);
+        } else {
+            console.log(`Du ar trys skaičiai yra vienodi`)
+        }
+
+//2
+
+        console.log(`Trečia užduotis`);
+        let vardas = `Angelina`;
+        console.log(vardas);
+        let pavarde = `Jolie`;
+        console.log(pavarde);
+        console.log(`Inicialai:`, vardas[0], pavarde[0]);
+
+//3
+
+        console.log(`Ketvirta užduotis`);
+        rand1 = rand(97, 122);
+        rand2 = rand(97, 122);
+        rand3 = rand(97, 122);
+        console.log(rand1, rand2, rand3);
+        console.log(`Sugeneruotos mažosios lotyniškos raidės:`, String.fromCharCode(rand1, rand2, rand3));
 
     
+ 
+ </script>
+ 
 </body>
 </html>
